@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Смирнов](https://up.htmlacademy.ru/htmlcss/35/user/2060893).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Рахманов](https://htmlacademy.ru/profile/flander).
 
 ---
 
