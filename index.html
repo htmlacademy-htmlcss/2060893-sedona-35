@@ -45,22 +45,31 @@
 			</nav>
 		</header>
 
+    <!-- Hero -->
+
 		<main class="page-main">
-			<h1 class="visually-hidden">Город - Седона</h1>
-			<img class="main-logo" src="images/welcome.svg" width="458" height="352" alt="Логотип-надпись: Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-			<section class="preview">
-				<h2 class="preiview-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-				<p class="preview-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-			</section>
+      <section class="hero">
+        <div class="hero-welcome">
+          <h1 class="visually-hidden">Город - Седона</h1>
+          <img class="main-logo" src="images/welcome.svg" width="458" height="352" alt="Логотип-надпись: Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        </div>
+        <div class="hero-preview">
+          <h2 class="preview-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="preview-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+      </section>
+
+      <!-- Adantages-->
 
 			<section class="benefits">
 				<h2 class="visually-hidden">Преимущества</h2>
+        <div class="benefits-picture">
+          <h3 class="benefits-title">Настоящий городок</h3>
+          <p class="benefits-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img src="images/advantage-photo-1.jpg" width="800" height="384" alt="Здание с кафе в городе Седона.">
+        </div>
+
         <ul class="benefits-list">
-          <li class="benefits-item">
-            <h3 class="benefits-title white-text">Настоящий городок</h3>
-            <p class="benefits-text white-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="images/advantage-photo-1.jpg" width="800" height="384" alt="Здание с кафе в городе Седона.">
-          </li>
           <li class="benefits-item">
             <h3 class="benefits-title">Небольшая площадь</h3>
             <p class="benefits-text">Все достопримечательности находятся очень близко</p>
@@ -73,34 +82,39 @@
             <h3 class="benefits-title">Мало туристов</h3>
             <p class="benefits-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="benefits-item">
-            <img src="images/advantage-photo-2.jpg" width="800" height="384" alt="Фото каньона.">
-            <h3 class="benefits-title white-text">Там есть мост дьявола</h3>
-            <p class="benefits-text white-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </li>
         </ul>
+
+        <div class="benefits-picture">
+          <img src="images/advantage-photo-2.jpg" width="800" height="384" alt="Фото каньона.">
+          <h3 class="benefits-title">Там есть мост дьявола</h3>
+          <p class="benefits-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </div>
 			</section>
 
-			<section class="recommend">
+      <!-- Recommendations -->
+
+			<section class="recommendations">
 				<h2 class="visually-hidden">Рекомендации</h2>
-				<ul class="recommend-list">
-					<li class="recommend-item">
-						<img class="recommend-home" src="images/advantage-home.svg" width="75" height="72" alt="Логотип домика.">
-						<h3 class="recommend-title">Жильё</h3>
-						<p class="recommend-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+				<ul class="recommendations-list">
+					<li class="recommendations-item">
+						<img class="recommendations-img" src="images/advantage-home.svg" width="75" height="72" alt="Логотип домика.">
+						<h3 class="recommendations-title">Жильё</h3>
+						<p class="recommendations-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 					</li>
-					<li class="recommend-item">
-            <img class="recommend-food" src="images/advantage-food.svg" width="74" height="70" alt="Логотип гамбургера.">
-            <h3 class="recommend-title">Еда</h3>
-            <p class="recommend-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+					<li class="recommendations-item">
+            <img class="recommendations-img" src="images/advantage-food.svg" width="74" height="70" alt="Логотип гамбургера.">
+            <h3 class="recommendations-title">Еда</h3>
+            <p class="recommendations-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-					<li class="recommend-item">
-            <img class="recommend-souvenirs" src="images/advantage-souvenirs.svg" width="64" height="76" alt="Логотип подарка.">
-            <h3 class="recommend-title">Сувиниры</h3>
-            <p class="recommend-text">Не только китайского, но и настоящего местного производства!</p>
+					<li class="recommendations-item">
+            <img class="recommendations-img" src="images/advantage-souvenirs.svg" width="64" height="76" alt="Логотип подарка.">
+            <h3 class="recommendations-title">Сувиниры</h3>
+            <p class="recommendations-text">Не только китайского, но и настоящего местного производства!</p>
           </li>
 				</ul>
 			</section>
+
+      <!-- Search -->
 
 			<div class="find-hotel">
 				<h2 class="find-hotel-title">Заинтересовались?</h2>
@@ -108,6 +122,8 @@
 				<button class="find-hotel-button">Поиск гостиницы в Седоне</button>
 			</div>
 
+      <!-- Subscribe -->
+      
 			<div class="subscribe">
 				<h2 class="subscribe-title">Подпишитесь на рассылку</h2>
 				<p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -118,7 +134,7 @@
 			</div>
 		</main>
 
-		<!-- Подвал сайта -->
+		<!-- Footer -->
 
 		<footer class="footer">
 
