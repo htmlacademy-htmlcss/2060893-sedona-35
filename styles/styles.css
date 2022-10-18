@@ -23,6 +23,7 @@ body {
   margin: 0;
 }
 
+
 /* Pages */
 
 .page-header {
@@ -192,6 +193,7 @@ body {
   text-transform: uppercase;
   color: #FFF;
   background: #82B3D3;
+  border-radius: 4px;
 }
 
 /* Footer */
@@ -206,6 +208,165 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color:#000;
+  color: #000;
   text-decoration: none;
+}
+
+/* hotels.html */
+
+.page-inner-header {
+  background-image: url("../images/catalog-background-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.page-inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFF;
+}
+
+.breadcrumbs {
+  color: #FFF;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFF;
+}
+
+.filter-item {
+  list-style-type: none;
+}
+
+.control-input {
+  line-height: 23px;
+  color: #FFF;
+}
+
+.filter-button-agree {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #82B3D3;
+}
+
+.filter-button-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFF;
+  background: none;
+}
+
+.hotel-found-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.sorting-container {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.card-button {
+  border: 2px solid #E5E5E5;
+}
+
+.card-button-current {
+  border: 2px solid #000000;
+}
+
+/* Catalog */
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-card-type {
+  color: #333333;
+}
+
+.hotel-card-price {
+  color: #333333;
+}
+
+.hotel-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  border-radius: 4px;
+}
+
+.button-more {
+  background: #756157;
+}
+
+.button-favorites {
+  background: #82B3D3;
+}
+
+.hotel-rating-points {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination-item {
+  list-style-type: none;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  color: #000;
+  background: #F2F2F2;
+}
+
+/* Subscribe */
+
+.subscribe-inner {
+  background-image: none;
+}
+
+.subscribe-title-inner {
+  color: #000;
+}
+
+.subscribe-text-inner {
+  color: inherit;
 }
