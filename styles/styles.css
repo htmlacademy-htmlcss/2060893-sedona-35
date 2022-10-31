@@ -429,7 +429,7 @@ body {
   border: none;
 }
 
-.filter {
+.filter-container {
   display: flex;
   flex-direction: row;
   padding: 40px 70px 70px;
@@ -438,6 +438,7 @@ body {
 
 .filter-list {
   padding: 0;
+  margin: 0;
 }
 
 .filter-left-container{
@@ -454,10 +455,12 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+  padding-bottom: 32px;
 }
 
 .filter-item {
   list-style-type: none;
+  padding-bottom: 16px;
 }
 
 .filter-control {
@@ -511,6 +514,16 @@ body {
 }
 
 /* Catalog */
+
+.hotel-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 70px 40px;
+}
+
+.hotel-found-title {
+  margin: 0;
+}
 
 .hotel-card-title {
   font-weight: 700;
