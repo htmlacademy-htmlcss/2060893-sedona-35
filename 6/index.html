@@ -58,7 +58,7 @@
             <img class="main-logo" src="images/welcome.svg" width="458" height="352" alt="Логотип-надпись: Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
           </div>
           <div class="hero-preview">
-            <h2 class="preview-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+            <h2 class="preview-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="preview-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
         </section>
@@ -69,8 +69,8 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="benefits-picture">
             <div class="benefits-text-container">
-              <h3 class="benefits-title">Настоящий<br>городок</h3>
-              <p class="benefits-text white-text">Седона — не аттракцион для<br>туристов, там течёт своя жизнь</p>
+              <h3 class="benefits-title blue-background">Настоящий городок</h3>
+              <p class="benefits-text white-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img class="benefits-image" src="images/advantage-photo-1.jpg" width="800" height="384" alt="Здание с кафе в городе Седона.">
           </div>
@@ -99,8 +99,8 @@
           <div class="benefits-picture">
             <img class="benefits-image" src="images/advantage-photo-2.jpg" width="800" height="384" alt="Фото каньона.">
             <div class="benefits-text-container">
-              <h3 class="benefits-title">Там есть<br>мост дьявола</h3>
-              <p class="benefits-text white-text">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+              <h3 class="benefits-title blue-background">Там есть мост дьявола</h3>
+              <p class="benefits-text white-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </div>
         </section>
@@ -109,26 +109,26 @@
 
         <section class="recommendations">
           <h2 class="visually-hidden">Рекомендации</h2>
-          <ul class="benefits-list">
-            <li class="benefits-item">
-              <div class="benefits-text-container">
+          <ul class="benefits-list rec">
+            <li class="benefits-item rec">
+              <div class="benefits-text-container rec">
                 <img class="recommendations-img" src="images/advantage-home.svg" width="75" height="72" alt="Логотип домика.">
-                <h3 class="benefits-title">Жильё</h3>
-                <p class="benefits-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+                <h3 class="benefits-title rec">Жильё</h3>
+                <p class="benefits-text rec">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </div>
             </li>
-            <li class="benefits-item background-none">
-              <div class="benefits-text-container">
+            <li class="benefits-item background-none rec">
+              <div class="benefits-text-container rec">
                 <img class="recommendations-img" src="images/advantage-food.svg" width="74" height="70" alt="Логотип гамбургера.">
-                <h3 class="benefits-title">Еда</h3>
-                <p class="benefits-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+                <h3 class="benefits-title rec">Еда</h3>
+                <p class="benefits-text rec">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </div>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-text-container">
+            <li class="benefits-item rec">
+              <div class="benefits-text-container rec">
                 <img class="recommendations-img" src="images/advantage-souvenirs.svg" width="64" height="76" alt="Логотип подарка.">
-                <h3 class="benefits-title">Сувиниры</h3>
-                <p class="benefits-text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+                <h3 class="benefits-title rec">Сувениры</h3>
+                <p class="benefits-text rec">Не только китайского, но и настоящего местного производства!</p>
               </div>
             </li>
           </ul>
@@ -139,19 +139,25 @@
         <div class="find-hotel">
           <h2 class="find-hotel-title">Заинтересовались?</h2>
           <p class="find-hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="find-hotel-button">Поиск гостиницы в Седоне</button>
+          <button class="find-hotel-button">
+            <div class="find-hotel-button-text">Поиск гостиницы в Седоне</div>
+          </button>
         </div>
 
         <!-- Subscribe -->
 
-        <div class="subscribe">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="E-mail" placeholder="Ваш e-mail" required>
-            <button class="subscribe-button" type="submit">Подписаться</button>
-          </form>
-        </div>
+        <section class="subscribe">
+          <div class="subscribe-container">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="subscribe-input" type="email" name="E-mail" placeholder="Ваш e-mail" required>
+              <button class="subscribe-button" type="submit">
+                <div class="subscribe-button-text">Подписаться</div>
+              </button>
+            </form>
+          </div>
+        </section>
       </div>
 		</main>
 
