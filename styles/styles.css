@@ -66,7 +66,7 @@ body {
 .navigation {
   display: flex;
   width: 100%;
-  margin-left: 184px;
+  margin-left: 170px;
 }
 
 .navigation-list {
@@ -309,8 +309,6 @@ body {
 /* Subscribe */
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url("../images/background-blur.jpg");
@@ -345,23 +343,17 @@ body {
 }
 
 .subscribe-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 684px;
 }
 
-.subscribe-input {
-  flex: 2;
+.subscribe-form input {
   border-radius: 4px;
   border: none;
 }
 
-.subscribe-button {
-  background-color: #82B3D3;
-  border-radius: 4px;
-  border: none;
-}
-
-.subscribe-button-text {
-  display: block;
+.subscribe-form button {
   padding: 8px 50px;
   font-weight: 700;
   font-size: 20px;
@@ -369,8 +361,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  border: none;
 }
-
 
 /* Footer */
 
@@ -581,6 +575,11 @@ body {
   justify-content: center;
   padding: 0;
   margin: 0;
+  margin-bottom: 80px;
+}
+
+.hotel-card-link {
+  text-decoration: none;
 }
 
 .hotel-card-item {
@@ -603,6 +602,7 @@ body {
   display: grid;
   grid-template-columns: 140px 140px;
   gap: 20px;
+  margin: 0;
 }
 
 .hotel-card-type {
@@ -704,7 +704,7 @@ body {
 }
 
 .subscribe-title-inner {
-  color: #000;
+  color: #000000;
 }
 
 .subscribe-text-inner {
