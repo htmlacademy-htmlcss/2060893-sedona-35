@@ -95,7 +95,7 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 16px 20px;
+  padding: 20px 16px;
 }
 
 .main-container {
@@ -124,7 +124,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 69px 275px 90px;
+  padding: 69px 270px 90px;
   margin: 0;
 }
 
@@ -176,13 +176,17 @@ body {
 }
 
 .benefits-title.blue-background {
-  padding: 92px 112px 0;
+  padding: 92px 114px 0;
 }
 
 .benefits-text {
   text-align: center;
   color: #333333;
   margin: 0;
+  padding: 62px 85px 121px;
+}
+
+.benefits-text.white-text {
   padding: 62px 85px 111px;
 }
 
@@ -231,7 +235,7 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 30px 85px 111px;
+  padding: 30px 85px 81px;
 }
 
 .white-text {
