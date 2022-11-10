@@ -95,7 +95,7 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 16px 20px;
+  padding: 20px 16px;
 }
 
 .main-container {
@@ -103,6 +103,7 @@ body {
 }
 
 .button-modal {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -124,7 +125,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 69px 275px 90px;
+  padding: 69px 270px 90px;
   margin: 0;
 }
 
@@ -176,13 +177,17 @@ body {
 }
 
 .benefits-title.blue-background {
-  padding: 92px 112px 0;
+  padding: 92px 114px 0;
 }
 
 .benefits-text {
   text-align: center;
   color: #333333;
   margin: 0;
+  padding: 62px 85px 121px;
+}
+
+.benefits-text.white-text {
   padding: 62px 85px 111px;
 }
 
@@ -231,7 +236,7 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 30px 85px 111px;
+  padding: 30px 85px 81px;
 }
 
 .white-text {
@@ -289,21 +294,22 @@ body {
 
 .find-hotel-button {
   display: block;
+  background-color: #756157;
+  border-radius: 4px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 50px;
+}
+
+.find-hotel-button-text {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #756157;
-  border-radius: 4px;
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.find-hotel-button-text {
-  margin: 8px 50px;
 }
 
 /* Subscribe */
@@ -343,27 +349,34 @@ body {
 }
 
 .subscribe-form {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  width: 684px;
+  display: flex;
 }
 
-.subscribe-form input {
-  border-radius: 4px;
+.subscribe-input {
+  font-family: "PT Sans";
+  border-radius: 4px 0 0 4px;
   border: none;
+  flex-grow: 1;
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.subscribe-form button {
+.subscribe-button {
+  background-color: #82B3D3;
+  border-radius: 0 4px 4px 0;
+  border: none;
   padding: 8px 50px;
+}
+
+.subscribe-button-text {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #82B3D3;
-  border-radius: 4px;
-  border: none;
 }
 
 /* Footer */
@@ -382,12 +395,17 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   list-style-type: none;
 }
 
 .footer-social-item {
+  display: flex;
   min-width: 47px;
   min-height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-phone {
@@ -488,38 +506,42 @@ body {
   justify-content: flex-end;
 }
 .filter-button-agree {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
+
   background-color: #82B3D3;
   border-radius: 4px;
   border: none;
   margin-bottom: 32px;
+  padding: 8px 50px;
 }
 
 .filter-button-reset {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
+
   background: none;
   border-radius: 4px;
   border: none;
 }
 
 .filter-button-text {
-  padding: 8px 50px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .filter-button-reset-text {
   padding: 8px 57px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .hotel-found-title {
@@ -618,6 +640,7 @@ body {
 }
 
 .hotel-card-button {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -636,8 +659,12 @@ body {
 
 .button-favorites {
   background-color: #82B3D3;
-
 }
+
+.button-favorites.button-current {
+  background-color: #7DB54F;
+}
+
 
 .hotel-stars {
   margin: 0;
