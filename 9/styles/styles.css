@@ -121,14 +121,14 @@ body {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 20px;
+  background-size: 20px 22px;
 }
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link {
   background-image: url("../images/favorites-nav.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 20px;
+  background-size: 18px 17px;
 }
 
 .main-container {
@@ -162,7 +162,7 @@ body {
 
 .button-modal:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 30%;
 }
 
 .button-modal:disabled {
@@ -182,31 +182,20 @@ body {
   margin: 0;
 }
 
-.main-logo {
-  display: block;
-  margin: 0 auto;
-  padding: 51px 371px 82px;
-}
+
 
 .hero-welcome {
+  min-width: 1200px;
+  min-height: 485px;
   background-color: #82B3D3;
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-image:
+    url("../images/decorative-index-background.svg"),
+    url("../images/welcome.svg"),
+    url("../images/index-background.jpg");
+  background-position: center bottom, 371px 51px, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100% auto, 458px 352px, 100% auto;
 }
-
-/*
-.divider {
-  background-image: url("../images/decorative-index-background.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 55.8%;
-  bottom: 0;
-}
-*/
 
 .preview-title {
   font-weight: 700;
@@ -246,7 +235,7 @@ body {
 .benefits-text-container::before {
   position: absolute;
   content: "";
-  top: 178px;
+  top: 189px;
   right: 170px;
   left: 170px;
   bottom: 204px;
@@ -410,7 +399,7 @@ body {
 
 .find-hotel-button:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 30%;
 }
 
 .find-hotel-button:disabled {
@@ -494,7 +483,7 @@ body {
 
 .subscribe-button:active {
   background-color: #82B3D3;
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 30%;
 }
 
 .subscribe-button:disabled {
@@ -550,7 +539,7 @@ body {
 }
 
 .footer-social-link:active {
-  fill: rgba(104, 162, 202, 0.3);
+  opacity: 30%;
 }
 
 .contact-phone {
@@ -575,7 +564,7 @@ body {
 }
 
 .contact-phone:active {
-  color: rgba(117, 97, 87, 0.3);
+  opacity: 30%;
 }
 
 .logo-partner {
@@ -586,6 +575,14 @@ body {
 
 .logo-partner-icon:hover {
   fill: #756157;
+}
+
+.logo-partner-icon:focus {
+  color: #756157;
+}
+
+.logo-partner-icon:active {
+  opacity: 30%;
 }
 
 /* hotels.html */
@@ -608,19 +605,69 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   color: #ffffff;
   list-style-type: none;
   margin: 0 auto;
   padding-top: 8px;
   padding-left: 70px;
+  padding-right: 70px;
+}
+
+.breadcrumbs-item {
+  position: relative;
+
+}
+
+.breadcrumbs-item::after {
+  color: inherit;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -18px;
+  width: 7px;
+  height: 10px;
+  background-image: url("../images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
 }
 
 .breadcrumbs-link {
-  color: inherit;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: bottom;
+  margin-right: 28px;
 }
 
-.breadcrumbs-item:first-child {
-  padding-right: 10px;
+.breadcrumbs-link-current {
+  opacity: 30%;
+}
+
+.breadcrumbs-link:hover:not(.breadcrumbs-link-current) {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.breadcrumbs-link:focus {
+  opacity: 60%;
+}
+
+.breadcrumbs-link:active {
+  opacity: 30%;
+}
+
+.breadcrumbs-link-current:hover {
+  cursor: default;
+}
+
+.breadcrumbs-item-home .breadcrumbs-link {
+  width: 13px;
+  height: 21px;
+  background-image: url("../images/breadcrubs-home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 15px;
 }
 
 .filter-form {
@@ -689,12 +736,48 @@ body {
   cursor: pointer;
 }
 
+.button-agree:hover {
+  background-color: #68A2CA;
+}
+
+.button-agree:focus {
+  background-color: #68A2CA;
+}
+
+.button-agree:active {
+  background-color: #82B3D3;
+  opacity: 30%;
+}
+
+.button-agree:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+  cursor: default;
+}
+
 .button-reset {
-  background: none;
+  background-color: transparent;
   border-radius: 4px;
   border: none;
   padding: 8px 57px;
   cursor: pointer;
+}
+
+.button-reset:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-reset:focus {
+  border: 3px solid #83B3D3;
+}
+
+.button-reset:active {
+  opacity: 30%;
+}
+
+.button-reset:disabled {
+  opacity: 10%;
+  cursor: default;
 }
 
 .filter-button-text {
@@ -707,7 +790,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 
 /* Catalog */
 
@@ -735,12 +817,31 @@ body {
   min-height: 48px;
 }
 
+.card-button:hover {
+  border: 2px solid #000000;
+}
+
+.card-button:focus {
+  border: 2px solid #68A2CA;
+}
+
+.card-button:hover {
+  border: 2px solid #000000;
+}
+
 .card-button:not(:last-child) {
   margin-right: 8px;
 }
 
 .select-control {
   margin-right: 70px;
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding: 10px 87px 10px 14px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .card-button-current {
@@ -826,12 +927,69 @@ body {
   padding: 8px 20px;
 }
 
+.button-more:hover {
+  background-color: #615048;
+}
+
+.button-more:focus {
+  background-color: #615048;
+}
+
+.button-more:active {
+  background-color: #756157;
+  opacity: 30%;
+}
+
+.button-more:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+  cursor: default;
+}
+
 .button-favorites {
   background-color: #82B3D3;
 }
 
+.button-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.button-favorites:focus {
+  background-color: #68A2CA;
+}
+
+.button-favorites:active {
+  background-color: #82B3D3;
+  opacity: 30%;
+}
+
+.button-favorites:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+  cursor: default;
+}
+
 .button-favorites--current {
   background-color: #7DB54F;
+}
+
+.button-favorites--current:hover {
+  background-color: #6C9E42;
+}
+
+.button-favorites--current:focus {
+  background-color: #6C9E42;
+}
+
+.button-favorites--current:active {
+  background-color: #7DB54F;
+  opacity: 30%;
+}
+
+.button-favorites--current:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+  cursor: default;
 }
 
 .hotel-stars {
@@ -908,6 +1066,11 @@ body {
   text-decoration: none;
   justify-content: center;
   align-items: center;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  opacity: 30%;
 }
 
 .pagination-current {
