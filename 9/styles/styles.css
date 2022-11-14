@@ -117,14 +117,14 @@ body {
   min-height: 64px;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
+.navigation-user .navigation-item:nth-child(1) {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 22px;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
+.navigation-user .navigation-item:nth-child(2) {
   background-image: url("../images/favorites-nav.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -182,19 +182,20 @@ body {
   margin: 0;
 }
 
-
+.main-logo {
+  display: block;
+  margin: 0 auto;
+  padding: 51px 371px 82px;
+}
 
 .hero-welcome {
-  min-width: 1200px;
-  min-height: 485px;
   background-color: #82B3D3;
   background-image:
     url("../images/decorative-index-background.svg"),
-    url("../images/welcome.svg"),
     url("../images/index-background.jpg");
-  background-position: center bottom, 371px 51px, center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 100% auto, 458px 352px, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, 100% auto;
+  background-position: center bottom, center;
 }
 
 .preview-title {
@@ -218,48 +219,36 @@ body {
 /* Advantages */
 
 .benefits-text-container {
-  position: relative;
   flex: 1;
 }
 
 .benefits-title {
+  position: relative;
   text-align: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  padding: 103px 112px 0;
+  padding: 103px 112px 62px;
 }
 
-.benefits-text-container::before {
+.benefits-title::before {
   position: absolute;
   content: "";
-  top: 189px;
-  right: 170px;
-  left: 170px;
-  bottom: 204px;
+  left: 50%;
+  bottom: 30px;
+  width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
-  order: 2;
-}
-
-.benefits-text-container.white-text::before {
-  position: absolute;
-  content: "";
-  top: 178px;
-  right: 170px;
-  left: 170px;
-  bottom: 204px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateX(-50%);
 }
 
 .benefits-text {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 62px 85px 121px;
+  padding: 0 85px 121px;
 }
 
 .white-text {
@@ -267,11 +256,11 @@ body {
 }
 
 .white-text--title {
-  padding: 92px 114px 0;
+  padding: 92px 114px 62px;
 }
 
 .white-text--description {
-  padding: 62px 85px 111px;
+  padding: 0 85px 111px;
 }
 
 .benefits-list {
@@ -514,19 +503,12 @@ body {
 }
 
 .footer-social-link {
-  position: relative;
-  display: block;
-  min-width: 47px;
-  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   fill: #83B3D3;
 }
 
@@ -740,10 +722,6 @@ body {
   background-color: #68A2CA;
 }
 
-.button-agree:focus {
-  background-color: #68A2CA;
-}
-
 .button-agree:active {
   background-color: #82B3D3;
   opacity: 30%;
@@ -764,10 +742,11 @@ body {
 }
 
 .button-reset:hover {
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  opacity: 25%;
 }
 
 .button-reset:focus {
+  outline: none;
   border: 3px solid #83B3D3;
 }
 
@@ -822,6 +801,7 @@ body {
 }
 
 .card-button:focus {
+  outline: none;
   border: 2px solid #68A2CA;
 }
 
@@ -993,31 +973,11 @@ body {
 }
 
 .hotel-stars {
-  min-width: 140px;
-  min-height: 37px;
-  margin: 0;
-  margin-right: auto;
-}
-
-.hotel-stars-4 {
-  background:
-    url("../images/star.svg") no-repeat 0,
-    url("../images/star.svg") no-repeat 24px,
-    url("../images/star.svg") no-repeat 48px,
-    url("../images/star.svg") no-repeat 72px;
-}
-
-.hotel-stars-3 {
-  background:
-  url("../images/star.svg") no-repeat 0,
-  url("../images/star.svg") no-repeat 24px,
-  url("../images/star.svg") no-repeat 48px;
-}
-
-.hotel-stars-2 {
-  background:
-  url("../images/star.svg") no-repeat 0,
-  url("../images/star.svg") no-repeat 24px;
+  background-image: url("../images/star.svg");
+  background-repeat: space no-repeat;
+  background-size: 19px 17px;
+  background-position: center;
+  width: 90px;
 }
 
 .hotel-rating-points {
