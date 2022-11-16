@@ -38,6 +38,7 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
+                <span class="count-badge">12</span>
                 <span class="visually-hidden">Избранное.</span>
               </a>
             </li>
@@ -251,6 +252,40 @@
         </section>
       </div>
     </footer>
+
+    <!-- Modal -->
+
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <legend class="input-modal-title">Дата Заезда:</legend>
+              <input class="search-form-field field" type="text" name="arrival-date" placeholder="27 апреля 2020">
+            </p>
+            <p class="field-group">
+              <legend class="input-modal-title">Дата выезда:</legend>
+              <input class="search-form-field field" type="text" name="departure-date" placeholder="1 сентября 2023">
+            </p>
+            <p class="field-group">
+              <legend class="input-modal-title">Взрослые:</legend>
+              <input class="search-form-field field" type="number" name="amount-adult" placeholder="2">
+            </p>
+            <p class="field-group">
+              <legend class="input-modal-title">Дети:</legend>
+              <input class="search-form-field field" type="number" name="amount-children" placeholder="2">
+            </p>
+            <button class="search-button-modal" type="submit">Найти</button>
+          </form>
+        </section>
+
+      </div>
+    </div>
+
   </body>
 
 </html>
