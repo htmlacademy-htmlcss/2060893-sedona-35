@@ -1375,7 +1375,7 @@ body {
 
 .modal-container {
   position: fixed;
-  display: block;
+  display: none;
   background-color: rgba(242, 242, 242, 0.8);
   top: 0;
   left: 0;
