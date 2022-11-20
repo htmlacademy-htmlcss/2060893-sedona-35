@@ -267,8 +267,6 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 62px;
-  padding-right: 29px;
-  padding-left: 29px;
 }
 
 .benefits-title:not(.white-text) {
@@ -1040,6 +1038,7 @@ img {
   background-image: url("../images/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  -webkit-appearance: none;
   appearance: none;
 }
 
